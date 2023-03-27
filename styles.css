@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: black;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+
+main,
+footer {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
+    background-color: #0275dd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.logo:hover {
+    color: black;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    color: black;
+}
+
+/* Main styles */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section {
+    flex: 70%;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+section article {
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+section article h3 {
+    margin-top: 0;
+}
+
+section article p {
+    line-height: 1.5;
+}
+
+section article a {
+    display: block;
+    margin-top: 10px;
+    text-align: right;
+}
+
+section img {
+    height: 50%;
+    border: solid;
+    width: 50%;
+}
+
+aside {
+    color: white;
+    flex: 25%;
+    background-color: #0275dd;
+    height: 35vw;
+    padding: 2px;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+aside ul {
+    color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside li {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Dark mode styles */
+.dark-mode-toggle {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 24px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode-toggle:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode a {
+    color: black;
+}
+
+.dark-mode a:hover {
+    color: #008cba;
+}
+
+.dark-mode article {
+    color: black;
+}
+
+.dark-mode aside .cat {
+    color: black;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container>h1 {
+    font-family: 'Montserrat', impact;
+    font-weight: 800;
+    font-size: 2.5em;
+    margin-top: -1%;
+    color: #0275dd;
+    text-shadow: 1px 1px black;
+    letter-spacing: 2px;
+}
+
+.carousel-container {
+    height: fit-content;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.carousel-images {
+    width: 80%;
+    background: #0275dd;
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px black;
+}
+
+.carousel-images img {
+    display: none;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-images img:first-of-type {
+    display: block;
+}
+
+.carousel-button {
+    align-self: center;
+    background: #0275dd;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 1px 1px black;
+}
+
+.carousel-button:hover {
+    cursor: pointer;
+    background: black;
+    box-shadow: 1px 1px #f2cd99;
+    color: white;
+}
