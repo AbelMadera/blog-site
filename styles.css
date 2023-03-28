@@ -111,6 +111,7 @@ section article a {
     display: block;
     margin-top: 10px;
     text-align: right;
+    color: rgb(21, 97, 144);
 }
 
 section img {
@@ -196,6 +197,15 @@ footer p {
 
 .dark-mode aside .cat {
     color: black;
+}
+.dark-mode article {
+    background-color: black;
+    color: #f4f4f4;
+    border: #fff;
+}
+
+.dark-mode section article a {
+    color: #f4f4f4;
 }
 
 
